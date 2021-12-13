@@ -105,9 +105,11 @@ td {
 	min-width: 102px;
 	text-align: center;
 	height: 58px;
-	font-size: 40px;
-	border: none;
+	font-size: 20px;
+	border: solid 1px #eee;
+	border-radius: 3px;
 	background-color: transparent;
+	margin: 2px;
 }
 .scored__pause > img, .scored__reload  > img {
 	height: 100%;
