@@ -38,20 +38,7 @@ class Board {
   reloadBoard() {
     this.gameOver.style.display = 'none';
     this.scored.innerHTML = 0;
-
-    const
-      food = document.querySelector('.food'),
-      point = document.querySelectorAll('.point');
-
-    if (food) {
-      document.querySelector('.food').classList.remove('food');
-    }
-    if (point) {
-      document.querySelectorAll('.point').forEach(el => {
-        if (el) {
-          el.classList.remove('point');
-        }
-      });
-    }
+    this.gameBoard.innerHTML = '';
+    this.generateBoard();
   }
 };

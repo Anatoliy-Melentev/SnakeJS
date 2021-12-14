@@ -87,7 +87,7 @@ class Snake  {
     this.direction = 'right';
 
     for (let i = 0; i < len; i++) {
-      let p = new Point(tail);
+      let p = new Point(tail, !i ? 'left' : (i + 1 === len ? 'right' : 'point'));
       p.move(i, this.direction);
       this.points.push(p);
     }
